@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ef;
+    color: #4b3832;
+}
+
+header {
+    background-color: #6f4e37;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.name{
+    font-size: 2rem;
+    color: blanchedalmond;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f2ebe1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3e2723;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+p, ul {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -20px;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    color: #8d6e63;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+}
+.highlight {
+    color: #6f4e37;
+    font-weight: 700;
+    font-size: 2rem;
+}
+footer {
+    background-color: #6f4e37;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Collapsible */
+.collapsible {
+    background-color: #f2ebe1;
+    color: #6f4e37;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #6f4e37;
+    text-align: left;
+    outline: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.content-answer {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #f2ebe1;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 10px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+    .name{
+        font-size: 1.6rem;
+    }
+     h2{
+        font-size: 2rem;
+     }
+    p, ul {
+        font-size: 1rem;
+    }
+.content-answer p{
+    font-size: 1.2rem;
+}
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
