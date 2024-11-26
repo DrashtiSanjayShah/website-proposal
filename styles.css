@@ -1,78 +1,160 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #f5f3ef;
-    color: #4b3832;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
 }
 
+/* Body Styling */
+body {
+    color: #333;
+    background-color: #f4f4f9;
+    /* line-height: 1.6; */
+}
+
+/* Header */
 header {
-    background-color: #6f4e37;
-    color: #fff;
-    padding: 2px;
     text-align: center;
-    font-size: 1.5rem;
+    padding: 30px 0;
+    background-color: #1D3557; /* Navy Blue */
+    color: #fff;
 }
-.name{
+
+header h1 {
     font-size: 2rem;
-    color: blanchedalmond;
+    margin-bottom: 10px;
 }
-section {
+
+header .name {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+/* Introduction Section */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    margin: 20px;
-    background-color: #f2ebe1;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #3e2723;
-    margin-bottom: 15px;
-    font-size: 2rem;
+/* Introduction Section */
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
 }
 
-p, ul {
+/* Text content styling */
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-content p {
     font-size: 1.3rem;
     line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Image content styling */
+.image-content {
+    flex: 1;
 }
 
-ul li {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    text-indent: -20px;
-    position: relative;
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50rem;
+    margin-left: 7rem;
+    border: 1.5px solid #1D3557;
 }
 
-ul li:before {
-    content: "•";
-    color: #8d6e63;
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0;
+/* Sections */
+.section {
+    margin: 30px 0;
+    padding: 16px;
 }
-.highlight {
-    color: #6f4e37;
-    font-weight: 700;
+
+.section h2 {
     font-size: 2rem;
-}
-footer {
-    background-color: #6f4e37;
-    color: #fff;
-    padding: 20px;
+    color: #1D3557; /* Navy Blue */
+    margin-bottom: 10px;
     text-align: center;
-    margin-top: 40px;
 }
 
-/* Collapsible */
+.section ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #1D3557;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section ul li {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.section ul li i {
+    font-size: 2rem;
+    color: #06D6A0; /* Bright Teal */
+    margin-bottom: 10px;
+}
+
+/* Cost Highlight */
+.highlight {
+    color: #e91e63; /* Pink highlight */
+    font-weight: bold;
+}
+
+/* Two-Column Layout for Deliverables and My Requirements */
+.two-column-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.two-column-layout ul {
+    display: block;
+}
+
+.two-column-layout ul li {
+    text-align: left;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.two-column-layout ul li i {
+    font-size: 2rem;
+    color: #06D6A0;
+    margin-bottom: 10px;
+}
+
+.price{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .collapsible {
-    background-color: #f2ebe1;
-    color: #6f4e37;
+    background-color: #f4f4f9;
+    color: #1D3557;
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -86,33 +168,59 @@ footer {
 
 .content-answer {
     padding: 0 15px;
+    font-size: 1.2rem;
     display: none;
     overflow: hidden;
-    background-color: #f2ebe1;
+    background-color: #f4f4f9;
     border-radius: 0 0 5px 5px;
     margin-bottom: 10px;
 }
+span{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: purple;
+}
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    background-color: #1D3557; /* Navy Blue */
+    color: #fff;
+    font-size: 1rem;
+}
 
-/* Media Query */
+/* Responsive Design */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.2rem;
-        font-weight: 300;
+    header{
+        padding: 20px 5px;
     }
     .name{
-        font-size: 1.6rem;
+        margin-top: 20px;
     }
-     h2{
-        font-size: 2rem;
-     }
-    p, ul {
-        font-size: 1rem;
+    /* Introduction section becomes column on smaller screens */
+    .introduction {
+        flex-direction: column;
+        text-align: center;
     }
-.content-answer p{
-    font-size: 1.2rem;
-}
-    section {
-        margin: 10px;
-        padding: 15px;
+
+    /* Image size adjusts in responsive view */
+    .image-content {
+        order: -1;
+        margin: 0 10px; /* Adjust margin to avoid too much space around */
+    }
+    .image-content img {
+        width: 90%; /* Image will take up more width */
+        margin: 0 auto; /* Ensures it's centered */
+    }
+
+    /* Stack section items in column */
+    .section ul {
+        flex-direction: column;
+    }
+
+    /* Stack two-column layout in a single column on small screens */
+    .two-column-layout {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
     }
 }
