@@ -112,11 +112,6 @@ header .name {
     line-height: 1.2;
 }
 
-.section ul li i {
-    font-size: 2rem;
-    color: #06D6A0; /* Bright Teal */
-    margin-bottom: 10px;
-}
 
 /* Cost Highlight */
 .highlight {
@@ -136,16 +131,12 @@ header .name {
 }
 
 .two-column-layout ul li {
+    font-size: 1.3rem;
     text-align: left;
     padding: 10px;
     background-color: #fff;
 }
 
-.two-column-layout ul li i {
-    font-size: 2rem;
-    color: #06D6A0;
-    margin-bottom: 10px;
-}
 
 .price{
     font-size: 1.5rem;
@@ -192,6 +183,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .text-content h2{
+        font-size: 1.6rem;
+    }
+    .text-content p{
+        font-size: 1rem;
+    }
     header{
         padding: 20px 5px;
     }
